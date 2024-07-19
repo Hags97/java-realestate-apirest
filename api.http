@@ -1,0 +1,25 @@
+GET http://localhost:8080/properties
+Content-Type: application/json
+
+
+
+###
+POST http://localhost:8080/properties
+Content-Type: application/json
+
+{
+    "pais": "España",
+    "ciudad": "Madrid",
+    "precio": 250000.00,
+    "description": "Hermoso apartamento en el centro de Madrid.",
+    "urlImagen": "http://example.com/image.jpg"
+}
+
+###
+DELETE http://localhost:8080/properties/1
+Content-Type: application/json
+
+
+
+
+
