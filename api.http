@@ -1,10 +1,16 @@
-GET http://localhost:8080/properties
+GET https://java-realestate-apirest-production.up.railway.app/properties
+Content-Type: application/json
+
+
+###GET 
+https://java-realestate-apirest-production.up.railway.app/properties/country/España
+
 Content-Type: application/json
 
 
 
 ###
-POST http://localhost:8080/properties
+POST https://java-realestate-apirest-production.up.railway.app/properties
 Content-Type: application/json
 
 {
@@ -16,7 +22,7 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:8080/properties/1
+DELETE https://java-realestate-apirest-production.up.railway.app/properties/2
 Content-Type: application/json
 
 
