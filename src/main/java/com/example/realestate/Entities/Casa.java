@@ -1,71 +1,59 @@
 package com.example.realestate.Entities;
 
-
+import java.util.List;
+import jakarta.persistence.ElementCollection;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Casa 
-{
+public class Casa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
     private Long id;
     private String pais;
     private String ciudad;
     private double precio;
     private String description;
-    private String urlImagen;
 
+    @ElementCollection
+    private List<String> urlImagenes;
 
-    public Long getId() 
-    {
+    // Getters and setters
+    public Long getId() {
         return id;
     }
 
-    public void setId(Long id)
-    {
+    public void setId(Long id) {
         this.id = id;
     }
 
-
-    public String getPais() 
-    {
+    public String getPais() {
         return pais;
     }
 
-    public void setPais(String pais) 
-    {
+    public void setPais(String pais) {
         this.pais = pais;
     }
 
-
-    public String getCiudad() 
-    {
+    public String getCiudad() {
         return ciudad;
     }
 
-    public void setCiudad(String ciudad) 
-    {
+    public void setCiudad(String ciudad) {
         this.ciudad = ciudad;
     }
 
-
-    public double getPrecio() 
-    {
+    public double getPrecio() {
         return precio;
     }
 
-    public void setPrecio(double precio) 
-    {
+    public void setPrecio(double precio) {
         this.precio = precio;
     }
-    
 
-    public String getDescription() 
-    {
+    public String getDescription() {
         return description;
     }
 
@@ -73,14 +61,11 @@ public class Casa
         this.description = description;
     }
 
-
-    public String getUrlImagen() {
-        return urlImagen;
+    public List<String> getUrlImagenes() {
+        return urlImagenes;
     }
-    
-    public void setUrlImagen(String urlImagen) {
-        this.urlImagen = urlImagen;
-    }
-    
 
+    public void setUrlImagenes(List<String> urlImagenes) {
+        this.urlImagenes = urlImagenes;
+    }
 }
