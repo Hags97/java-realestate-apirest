@@ -13,15 +13,6 @@ Content-Type: application/json
 POST https://java-realestate-apirest-production.up.railway.app/properties
 Content-Type: application/json
 
-{
-    "pais": "Francia",
-    "ciudad": "Marsella",
-    "precio": 850000.00,
-    "description": "Luxurious coastal home in Marseille, boasting stunning sea views and elegant modern design. This exquisite property offers high-end amenities and a prime location along the Mediterranean coast.",
-    "urlImagen": "https://res.cloudinary.com/dozqqeld5/image/upload/v1721840001/francia-3_djjmmp.jpg"
-}
-
-
 
 
 
@@ -34,20 +25,15 @@ Content-Type: application/json
 
 
 ###
-PUT https://java-realestate-apirest-production.up.railway.app/properties/5
+PUT https://java-realestate-apirest-production.up.railway.app/properties
 Content-Type: application/json
 
-{
-    "pais": "Francia",
-    "ciudad": "Aix-en-Provence",
-    "precio": 300000.0,
-    "description": "Charming house located in the heart of Provence, surrounded by lavender fields and picturesque landscapes. This tranquil retreat offers a unique rural living experience with all modern amenities.",
-    "urlImagenes": [
-        
-        "https://res.cloudinary.com/dozqqeld5/image/upload/v1721840002/francia-1_n26pbv.jpg",
-        "https://res.cloudinary.com/dozqqeld5/image/upload/v1721840002/francia-1.1_vyz7jw.jpg"
-        
-    ]
-        
-}
+
+
+###
+PUT https://java-realestate-apirest-production.up.railway.app/properties
+Content-Type: application/json
+
+
+
 
