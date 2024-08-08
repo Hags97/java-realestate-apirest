@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import com.example.realestate.Repositories.CasaRepository;
 import com.example.realestate.Entities.Casa;
 
+@CrossOrigin(origins = "https://java-realestate-apirest-production.up.railway.app/properties")
 @RestController
 @RequestMapping("/properties")
 public class CasaController {
